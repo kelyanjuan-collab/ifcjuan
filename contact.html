@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Kelyan Juan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="inner-page">
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a href="index.html" class="brand">KELYAN JUAN</a>
+        <nav>
+          <ul class="menu">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container inner-hero">
+      <article class="inner-card">
+        <img class="inner-card__media" src="assets/Rectangle 6.png" alt="Contact photographe" />
+        <div class="inner-card__body">
+          <p class="inner-card__kicker">Contact</p>
+          <h1>Discutons de votre projet photo</h1>
+          <p>
+            Vous pouvez me contacter pour un mariage, un événement, un portrait ou une demande
+            professionnelle. Je vous réponds rapidement avec une proposition claire, adaptée à
+            vos besoins et à votre univers.
+          </p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-grid">
+              <label class="field">
+                <span>Nom complet</span>
+                <input type="text" name="name" placeholder="Votre nom" required />
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="vous@email.com" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Sujet</span>
+              <input type="text" name="subject" placeholder="Type de prestation" required />
+            </label>
+
+            <label class="field">
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Décrivez votre besoin (date, lieu, style, budget...)"
+                required
+              ></textarea>
+            </label>
+
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+
+            <div class="inner-actions">
+              <button class="btn btn--primary" type="submit">Envoyer la demande</button>
+              <a class="btn btn--ghost" href="portfolio.html">Découvrir le portfolio</a>
+            </div>
+          </form>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
